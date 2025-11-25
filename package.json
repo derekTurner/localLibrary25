@@ -1,5 +1,13 @@
 {
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "vite": "^6.4.1"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.11.96",
+    "bootstrap": "^5.3.8",
+    "dotenv": "^17.2.3",
+    "mongoose": "^9.0.0",
+    "react-bootstrap": "^2.10.10"
   }
 }
