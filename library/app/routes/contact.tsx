@@ -1,11 +1,23 @@
-import { Form } from "react-router";
+import { Form, type MetaFunction } from "react-router";
 
 import { getContact, type ContactRecord } from "../data";
 import type { Route } from "./+types/contact";
 
+export const meta: MetaFunction<typeof clientLoader> = ({ data }) => {
+  const contact = data?.contact;
+  return [
+    {
+      name: "description",
+      content: contact
+        ? `View contact details for ${contact.first} ${contact.last}`
+        : "Contact details",
+    },
+  ];
+};
+
 export async function clientLoader({ params }: Route.LoaderArgs) {
   const contact = await getContact(params.contactId);
-    if (!contact) {
+  if (!contact) {
     throw new Response("Not Found", { status: 404 });
   }
   return { contact };
