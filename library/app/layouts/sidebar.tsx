@@ -24,6 +24,10 @@ export default function SidebarLayout() {
   const navItems: NavItem[] = [
     { path: "/", label: "Home" },
     { path: "/catalog", label: "Catalog" },
+    { path: "/authors", label: "Authors" },
+    { path: "/genres", label: "Genres" },
+    { path: "/books", label: "Books" },
+    { path: "/instances", label: "Book Instances" },
     { path: "/about", label: "About" },
   ];
 
