@@ -17,6 +17,18 @@ type Pages = {
   "/catalog": {
     params: {};
   };
+  "/authors": {
+    params: {};
+  };
+  "/genres": {
+    params: {};
+  };
+  "/books": {
+    params: {};
+  };
+  "/instances": {
+    params: {};
+  };
   "/about": {
     params: {};
   };
@@ -25,11 +37,11 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/catalog" | "/about";
+    page: "/" | "/catalog" | "/authors" | "/genres" | "/books" | "/instances" | "/about";
   };
   "layouts/sidebar.tsx": {
     id: "layouts/sidebar";
-    page: "/" | "/catalog";
+    page: "/" | "/catalog" | "/authors" | "/genres" | "/books" | "/instances";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -38,6 +50,22 @@ type RouteFiles = {
   "routes/catalog.tsx": {
     id: "routes/catalog";
     page: "/catalog";
+  };
+  "routes/authors.tsx": {
+    id: "routes/authors";
+    page: "/authors";
+  };
+  "routes/genres.tsx": {
+    id: "routes/genres";
+    page: "/genres";
+  };
+  "routes/books.tsx": {
+    id: "routes/books";
+    page: "/books";
+  };
+  "routes/bookinstances.tsx": {
+    id: "routes/bookinstances";
+    page: "/instances";
   };
   "routes/about.tsx": {
     id: "routes/about";
@@ -50,5 +78,9 @@ type RouteModules = {
   "layouts/sidebar": typeof import("./app/layouts/sidebar.tsx");
   "routes/home": typeof import("./app/routes/home.tsx");
   "routes/catalog": typeof import("./app/routes/catalog.tsx");
+  "routes/authors": typeof import("./app/routes/authors.tsx");
+  "routes/genres": typeof import("./app/routes/genres.tsx");
+  "routes/books": typeof import("./app/routes/books.tsx");
+  "routes/bookinstances": typeof import("./app/routes/bookinstances.tsx");
   "routes/about": typeof import("./app/routes/about.tsx");
 };
