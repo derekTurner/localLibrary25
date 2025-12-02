@@ -1,7 +1,7 @@
 import { type MetaFunction, Link } from "react-router";
-import type { Route } from "./+types/bookinstance";
+import type { Route } from "./+types/bookinstances";
 
-import { loadBookInstances, type BookInstanceData } from "./bookinstance.server";
+import { loadBookInstances, type BookInstanceData } from "./bookinstances.server";
 
 export const meta: MetaFunction = () => {
   return [

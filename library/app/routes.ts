@@ -12,7 +12,7 @@ export default [
     route("authors", "routes/authors.tsx"),
     route("genres", "routes/genres.tsx"),
     route("books", "routes/books.tsx"),
-    route("instances", "routes/instances.tsx"),
+    route("instances", "routes/bookinstances.tsx"),
   ]),
   route("about", "routes/about.tsx"),
 ] satisfies RouteConfig;
