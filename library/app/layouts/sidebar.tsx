@@ -25,6 +25,7 @@ export default function SidebarLayout() {
     { path: "/", label: "Home" },
     { path: "/catalog", label: "Catalog" },
     { path: "/authors", label: "Authors" },
+    { path: "/genres", label: "Genres" },
     { path: "/about", label: "About" },
   ];
 
